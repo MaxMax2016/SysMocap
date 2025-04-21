@@ -178,6 +178,29 @@ npm start
 
 [![Star History Chart](https://api.star-history.com/svg?repos=xianfei/SysMocap&type=Date)](https://star-history.com/#xianfei/SysMocap&Date)
 
+### Improve Translate
+
+If you want to contribute language translation, you can add translation in [utils/language.js](https://github.com/xianfei/SysMocap/blob/main/utils/language.js)
+
+Then modify [mainview/framework.html](https://github.com/xianfei/SysMocap/blob/main/mainview/framework.html)
+
+```html
+ <div class="settings-item">
+  <i class="mdui-icon material-icons" style="margin-right: 10px; margin-top: -3px">language</i>
+  <span>{{language.tabSettings.ui.language}}</span>
+  <select v-model="settings.ui.language" class="mdui-select" style="float: right; margin-right: 10px" id="demo-js-2">
+    <option value="zh">简体中文</option>
+    <option value="en">English</option>
+  </select>
+</div>
+```
+
+### Fonts
+
+[Nowar Rounded](https://github.com/nowar-fonts/Nowar-Rounded) for East Asian languages (汉语、漢語、日本語、한국어)
+
+[Quicksand](https://fonts.google.com/specimen/Quicksand) for English and etc.
+
 ### Thanks
 
 You can see all `dependencies` in [package.json](https://github.com/xianfei/SysMocap/blob/main/package.json)
@@ -203,3 +226,5 @@ You can see all `dependencies` in [package.json](https://github.com/xianfei/SysM
   pages={429-434},
   doi={10.1109/ISMAR-Adjunct57072.2022.00092}}
 ```
+
+![SysMocap](https://socialify.git.ci/xianfei/SysMocap/image?description=1&font=Jost&forks=1&issues=1&logo=https%3A%2F%2Fgithub.com%2Fxianfei%2FSysMocap%2Fassets%2F8101613%2Fadca7a3c-bdb2-4bda-af26-7ef9ba218c4c&name=1&owner=1&pulls=1&stargazers=1&theme=Auto)
